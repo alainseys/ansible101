@@ -1,0 +1,16 @@
+ansible
+ansible-lint
+ansible-dev-tools
+ansible-builder
+ansible-creator
+ansible-navigator
+pywinrm
+molecule
+pyVmomi
+requests
+molecule-docker
+pytest-molecule
+docker
+netmiko
+yamllint
+dnspython
