@@ -66,9 +66,9 @@ WORKDIR /workspace
 # Git customization (replace this with folder)
 RUN git config --global --add safe.directory /workspaces/awx
 
-RUN echo "alias ansible-update='git push origin HEAD:main'" >> /etc/bash.bashrc
-RUN echo "alias ansible-submodules='/workspaces/awx/scripts/ansible-submodules.sh'" >> /etc/bash.bashrc
-RUN echo "alias ansible-create-submodule='/workspaces/awx/scripts/ansible-add-submodule.sh'" >> /etc/bash.bashrc
-RUN echo "alias ansible-module='/workspaces/awx/scripts/ansible-role.sh'" >> /etc/bash.bashrc
+#RUN echo "alias ansible-update='git push origin HEAD:main'" >> /etc/bash.bashrc
+#RUN echo "alias ansible-submodules='/workspaces/awx/scripts/ansible-submodules.sh'" >> /etc/bash.bashrc
+#RUN echo "alias ansible-create-submodule='/workspaces/awx/scripts/ansible-add-submodule.sh'" >> /etc/bash.bashrc
+#RUN echo "alias ansible-module='/workspaces/awx/scripts/ansible-role.sh'" >> /etc/bash.bashrc
 
 

@@ -1,0 +1,7 @@
+- name: Create a file on windows
+  hosts: all
+  tasks:
+    - name: Create a file > test.txt
+      ansible.windows.win_copy:
+        content: 'Hello ansible'
+        dest: 'C:\temp\test.txt'
