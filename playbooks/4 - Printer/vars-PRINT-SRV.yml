@@ -3,7 +3,7 @@ printers:
         driver: "Generic / Text Only"
         driver_path: "C:\\Windows\\inf\\ntprint.inf"
         ip: "192.168.1.100"
-        port: "IP_192.168.1.100""
+        port: "IP_192.168.1.100"
 
       - name: "Ansible-Test-2"
         driver: "Generic / Text Only"
