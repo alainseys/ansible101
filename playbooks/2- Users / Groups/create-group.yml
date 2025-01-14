@@ -1,0 +1,12 @@
+- name: Create a group
+  hosts: all
+  become: true
+  become_method: ansible.builtin.runas
+  become_user: ansible
+  tasks:
+    - name: Create a group > ansible_test
+      ansible.windows.win_group:
+        name: ansible_test
+        description: Ansible Test
+        state: absent
+
