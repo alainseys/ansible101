@@ -59,6 +59,8 @@ USER $USER_NAME
 # Copy requirements.txt and install in python
 COPY requirements.txt /workspace/requirements.txt
 RUN pip install -r /workspace/requirements.txt
+RUN export PATH="$HOME/.local/bin:$PATH"
+
 # Swithc back to non root user
 WORKDIR /workspace
 
