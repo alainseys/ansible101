@@ -1,0 +1,24 @@
+printers:
+      - name: "Ansible-Test-1"
+        driver: "Generic / Text Only"
+        driver_path: "C:\\Windows\\inf\\ntprint.inf"
+        ip: "192.168.1.100"
+        port: "IP_192.168.1.100""
+
+      - name: "Ansible-Test-2"
+        driver: "Generic / Text Only"
+        driver_path: "C:\\Windows\\inf\\ntprint.inf"
+        ip: "1192.168.1.101"
+        port: "IP_192.168.1.101"
+
+      - name: "Ansible-Test-3"
+        driver: "Generic / Text Only"
+        driver_path: "C:\\Windows\\inf\\ntprint.inf"
+        ip: "192.168.1.102"
+        port: "IP_192.168.1.102"
+
+      - name: "Ansible-Test-4"
+        driver: "Dell 1350cnw Color Printer"
+        driver_path: "\\\\SERVER1\\PrinterDrivers\\DELL\\1350CNW\\1350cnw_DRV_ENG_02-04-05-00\\English\\Win_87VistaXP\\x64\\dlhsmzi.inf"
+        ip: "192.168.1.103"
+        port: "IP_192.168.1.104"
