@@ -1,0 +1,14 @@
+- name: Block Micorosft account on Windows machines
+  hosts: all
+  tasks:
+    - name: Set NoConnection registry key to block ms accounts
+      ansible.windows.win_regedit:
+        path: 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+        name: NoConnectedUser
+        data: 3
+        type: dword
+      register: reg_result
+
+    - name: Ensure the registry key was corrected
+      ansible.builtin.debug:
+        msg: "Reg Key updates: {{ reg_result }}"

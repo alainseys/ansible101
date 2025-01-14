@@ -1,0 +1,10 @@
+- name: Block Micorosft account on Windows machines
+  hosts: all
+  tasks:
+    - name: Include block-ms-accounts.yml
+      ansible.builtin.import_playbook:
+        name: block-ms-accounts.yml
+
+    - name: Include updates.yml
+      ansible.builtin.import_playbook:
+        name: updates.yml
